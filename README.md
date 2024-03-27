@@ -1,4 +1,17 @@
+
+# Teste de Estágio Para Desenvolvedor
+- LinkedIn [Eduardo Almeida](https://www.linkedin.com/in/edualmeid)
+- Contato [WhatsApp](https://wa.me/5511997685236)
+- Email: [e-mail](mailto://edualmeida@gmail.com)
+
+Neste repositório, você encontrará informações e questões 
+relevantes para a fase de testes para o estágio em desenvolvimento ofertado pela
+Target Sistemas. 
+
+---
+
 ## Questão 01
+
 ### Class  [Questao01.java](src/main/java/org/teste/Questao01.java)
 
 ``` txt
@@ -15,8 +28,10 @@ imprimir(SOMA);
 
 Ao final do processamento, qual será o valor da variável SOMA?
 ```
+
 Chegamos ao resultado que a variavel `SOMA = 91`.
 Para comprovar esse calculo fizemos de forma direta o algoritmo:
+
 ``` java
 int indice = 13;
 int soma = 0;
@@ -27,14 +42,15 @@ while (k < 13) {
 }
 System.out.println(soma);
 ```
+
 ```cmd
 91
 ```
 
-
-
 ---
+
 ## Questão 02
+
 ### Class  [Questao02.java](src/main/java/org/teste/Questao02.java)
 
 ``` txt
@@ -48,7 +64,9 @@ IMPORTANTE:
 Esse número pode ser informado através de qualquer entrada de sua preferência 
 ou pode ser previamente definido no código;
 ```
+
 Fizemos um teste na função main com as funçôes desenvolvidas:
+
 ``` java
 // Um número pertence à sequência de Fibonacci se e somente se um
 // ou ambos os seguintes critérios forem verdadeiros:
@@ -59,13 +77,17 @@ public static boolean isFibonacci(int numero) {...}
 // números grandes devido à repetição de cálculos.
 public static int fibonacci(int numero) {...}
 ```
+
 Teste para verdade:
+
 ``` cmd
 Digite um número inteiro da sequencia de fibonacci: 8
 Você digitou 8 ele pertence a sequencia.
 O proximo número da sequencia será 13
 ```
+
 Teste para falso:
+
 ``` cmd
 Digite um número inteiro da sequencia de fibonacci: 11
 O número 11 não pertence a sequcnia.
@@ -74,6 +96,7 @@ O número 11 não pertence a sequcnia.
 ___
 
 ## Questão 03
+
 ### Class  [Questao03.java](src/main/java/org/teste/Questao03.java)
 
 ``` txt
@@ -136,6 +159,7 @@ Logica F: [2, 10, 12, 16, 17, 18, 19, 20, 21, 22, 23]
 ___
 
 ## Questão 04
+
 ### Classe  [No class]()
 
 ``` txt
@@ -147,13 +171,16 @@ Seu objetivo é descobrir qual interruptor controla qual lâmpada.
 Como você faria para descobrir, usando apenas duas idas até uma das 
 salas das lâmpadas, qual interruptor controla cada lâmpada?
 ```
+
 O problema deixou algumas possibilidades.\  
 Analisando o cenario.
 São 4 salas e 3 lampadas:
- - `SALAS: W, X, Y, Z`
- - `INTERRUPTORES: A, B, C`
+
+- `SALAS: W, X, Y, Z`
+- `INTERRUPTORES: A, B, C`
 
 Ações:
+
 ``` txt
 SALA W = Sala dos interruptores
 
@@ -162,7 +189,9 @@ Ligue o INTERRUPTOR B;
 Não ligue o INTERRUPTOR C;
 Desligue o INTERRUPTOR A;
 ```
+
 Algoritmo:
+
 ```
 Para cada SALA na lista:
     Se, lâmpada ligada: 
@@ -173,7 +202,9 @@ Para cada SALA na lista:
         Se lâmpada fria:
             SALA = INTERRUPTOR C
 ```
+
 Solução valida:
+
 ```
 Lâmpada X ligada? (sim/não): sim
 Lâmpada Y ligada? (sim/não): não
@@ -185,21 +216,36 @@ Interruptor da sala X: B
 Interruptor da sala Y: A
 Interruptor da sala Z: C
 ```
-Se você puder identificar os interruptores de duas salas, 
+
+Se você puder identificar os interruptores de duas salas,
 o interruptor da terceira sala será automaticamente conhecido.
 
 ---
+
 ## Questão 05
-### Class  [Questao05.java](src/main/java/org/teste/Questao02.java)
+
+### Class  [Questao05.java](src/main/java/org/teste/Questao05.java)
 
 ``` txt
-2) Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor 
-sempre será a soma dos 2 valores anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), 
-escreva um programa na linguagem que desejar onde, informado um número, 
-ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o 
-número informado pertence ou não a sequência.
+5) Escreva um programa que inverta os caracteres de um string.
 
 IMPORTANTE:
-Esse número pode ser informado através de qualquer entrada de sua preferência 
-ou pode ser previamente definido no código;
+a) Essa string pode ser informada através de qualquer entrada de sua 
+preferência ou pode ser previamente definida no código;
+b) Evite usar funções prontas, como, por exemplo, reverse;
+```
+
+Definimos que o a string pode ser inserida via terminal em um teste na
+fubção main. \
+Sobre a função de inversão da string:
+``` java
+// A funçao espera uma string e retorna uma string (invertida)
+// Internamente ela trabalha com uma stringbuilder e um laço 
+// para inverter a string original.
+public static String stringInversa(String string) {
+```
+Prompt:
+``` cmd
+Digite uma string: As pessoas fortes não derrubam as outras, elas ajudam-nas a se erguerem
+String invertida: mereugre es a san-maduja sale ,sartuo sa maburred oãn setrof saossep sA
 ```
